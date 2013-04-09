@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="http://code.jquery.com/qunit/qunit-git.css" rel="stylesheet" type="text/css" />
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <script src="http://code.jquery.com/qunit/qunit-git.js"></script>
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery.imageslideshow.js"></script>
+        <meta charset=utf-8 />
+        <title>jquery.imageslideshow demo</title>
+        
+    </head>
+    <body>
+
+        <h2> imageSlideshow jQuery plugin demo page </h2>
+        <div id="module"></div>
+
+        <script type="text/javascript">
+            var arrImageList =['http://www.westminsterkennelclub.org/breedinformation/working/images/samoyed.jpg',
+                'http://static.tumblr.com/o9yg6la/zsymaeh1o/samoyedaa.jpg',
+                'http://fotos.tsncs.com/img/20120410/7273071/cachorros-de-samoyedo-24703108_3.jpg',
+                'http://www.dogbreedinfo.com/images17/SamoyedHolly3YearsOld.JPG'],
+            $module = $('#module').imageSlideshow({
+                imageList : arrImageList,
+                animationTime : 300,
+                transitionTime : 2000,
+                loop: true,
+                autoPlay: true,
+                css  :{
+                    width:500,
+                    height:500
+                }
+            });
+
+            
+
+                        
+        </script>
+
+    </body>
+</html>
